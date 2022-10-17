@@ -21,7 +21,7 @@ export default {
             </div>
 
             <nav class="menu-js">
-                <ul class="flex" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
+                <ul class="flex" :class="showMobileMenu ? 'open-menu' : 'closed-menu'">
                     <li><a href="">Home</a></li>
                     <li><a href="">Soluções</a></li>
                     <li><a href="">Projetos</a></li>
