@@ -1,0 +1,8 @@
+@mixin flexBetween {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 769px) {
+        justify-content: space-between;
+        flex-direction: unset;
+    }
+}
