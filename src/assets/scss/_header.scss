@@ -1,0 +1,41 @@
+header.main {
+    padding: 12px 0;
+    border-bottom: 1px solid #DDDDDD22;
+    .container.flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+    .logo {
+        img {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+    nav.menu-js {
+        @media (min-width: 840px) {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        ul {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+        .btn-contact {
+            display: none;
+            @media (min-width: 840px) {
+                display: flex;
+            }
+        }
+        .menu-mobile {
+            font-size: 32px;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
