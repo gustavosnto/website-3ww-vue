@@ -14,6 +14,9 @@ header.main {
         }
     }
     nav.menu-js {
+        @media (max-width: 768px) {
+            
+        }
         @media (min-width: 840px) {
             display: flex;
             gap: 32px;
@@ -21,6 +24,35 @@ header.main {
         }
         ul {
             @media (max-width: 768px) {
+                display: none;
+                &.open-menu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    // justify-content: center;
+                    padding-top: 120px;
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    top: 0;
+                    left: 0;
+                    background-color: #7362B3;
+                    li {
+                        a {
+                            font-size: 2rem;
+                            color: #FFF;
+                        }
+                    }
+                    .close-menu {
+                        display: block;
+                        position: absolute;
+                        font-size: 3rem;
+                        top: 26px;
+                        right: 18px;
+                    }
+                }
+            }
+            .close-menu {
                 display: none;
             }
         }
